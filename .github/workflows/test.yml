@@ -31,7 +31,6 @@ jobs:
       if: matrix.allow_failure != true
       run: 'which openssl'
     - uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
     - uses: purcell/setup-emacs@master
       with:
         version: ${{ matrix.emacs_version }}
